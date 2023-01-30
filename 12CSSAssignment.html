@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>12 CSS Assignment</title>
+    <style>
+        .maincontainer {
+            margin: auto;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .header {
+            text-align: center;
+            font-size: 50px;
+            font-family: Arial;
+            color: #6c6b6b;
+        }
+        .buttongrp {
+            display: flex;
+            width: 1000px;
+            margin-left: 350px;
+            margin-top: 30px;
+        }
+        .menubtn {
+            height: 40px;
+            width: 200px;
+            color: #3092f3;
+            border-color: #ffffff;
+            background-color: #ffffff;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .menubtn:hover {
+            background-color: #3092f3;
+            color: #ffffff;
+        }
+        #nnbox #wwbox #ccbox #aabox .menubtn:active {
+            background-color: #3092f3;
+            color: #ffffff;
+            visibility:visible ;
+           
+        }
+        .menudeschead {
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #6c6b6b;
+        }
+        .menudescpara {
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #6c6b6b;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body class="maincontainer">
+    <div class="container">
+        <div class="header">
+            Meet the Speakers
+        </div>
+        <div class="buttongrp">
+            <button class="menubtn" name="netninja" value="netninja">The Net Ninja</button>
+            <button class="menubtn" name="webwiz" value="webwiz">The Web Wizard</button>
+            <button class="menubtn" name="capcode" value="capcode">Captain Code</button>
+            <button class="menubtn" name="angavg" value="angavg">Angular Avenger</button>
+        </div>
+       
+            <div class="menudesc">
+                <div class="menudeschead">
+                    The Net Ninja
+                </div>
+                <div class="menudescpara">
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book.<br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book.
+                </div>
+            </div>
+      
+    </div>
+</body>
+
+</html>

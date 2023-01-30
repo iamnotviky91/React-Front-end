@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>9CSSAssignment</title>
+	<style>
+		.maincontainer {
+			margin: auto;
+			overflow: scroll;
+		}
+
+		/*Navbar styling*/
+		.navbar {
+			display: flex;
+			background-color: #eae8e8;
+		}
+
+		/*Navbar Menu Items styling*/
+		.menuItems {
+			display: flex;
+			list-style-type: none;
+			justify-content: space-between;
+			width: 350px;
+			font-family: Arial;
+			letter-spacing: 1.5px;
+		}
+
+		/*Navbar language dropdown styling*/
+		#languageselection {
+			margin-left: 60%;
+			border: 0px;
+			background-color: #eae8e8;
+			font-family: Arial;
+			color: #3e3e3e;
+			font-size: medium;
+			letter-spacing: 1.5px;
+		}
+
+		/*Navbar hyperlink styling*/
+		a.navlinks {
+			text-decoration: none;
+			color: #3e3e3e;
+		}
+		/*Navbar hyperlink hover styling*/
+		a.navlinks:hover {
+			text-decoration: underline;
+			text-decoration-color: #22225c;
+			text-decoration-thickness: 2px;
+		}
+
+		/*Main options container styling*/
+		.optionsnav {
+			display: flex;
+			justify-content: space-evenly;
+			width: 1300px;
+			margin-left: 100px;
+			margin-top: 50px;
+
+		}
+		/*Main options button styling*/
+		.optbtn {
+
+			border-width: 1px;
+			padding: 15px;
+			font-size: larger;
+			font-weight: 400;
+			border-color: #eae8e8;
+			color: #3e3e3e;
+			background-color: #eae8e8;
+			height: 55px;
+			width: 400px;
+		}
+		/*Main options button hover styling*/
+		button.optbtn:hover {
+			background-color: #22225c;
+			color: #eae8e8;
+		}
+
+		/*Cards container styling*/
+		.cardscontainer {
+			display: flex;
+			justify-content: space-evenly;
+			width: 1300px;
+			margin-left: 100px;
+			margin-top: 50px;
+		}
+		/*Card styling*/
+		.card {
+			width: 328px;
+			height: 580px;
+			border-width: 2px;
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: #eae8e8;
+
+		}
+		/*Card image styling*/
+		.cardimg {
+			width: 328px;
+			height: 160px;
+		}
+		/*Card text styling*/
+		.cardcontent {
+			padding: 20px;
+			text-align: center;
+			font-size: 20px;
+
+		}
+		/*Card header styling*/
+		#cardhead {
+			font-size: 30px;
+			text-align: center;
+			color: #3e3e3e;
+		}
+		/*Card button styling*/
+		.btncard {
+			padding: 20px;
+			width: 200px;
+			margin-left: 70px;
+			border-color: #7194e0;
+			border-width: 1px;
+			color: #3e3e3e;
+		}
+		/*Card anchor styling*/
+		a.cardcontent {
+			display: flex;
+			margin-left: 50px;
+			margin-top: 50px;
+			text-decoration: none;
+			color:#898181;
+			font-size: 1rem;
+		}
+		/*Card paragraph styling*/
+		p.cardcontent {
+			margin-top: 20px;
+			font-family: arial;
+			font-size: larger;
+		}
+		/*Card button hover styling*/
+		.btncard:hover {
+			background-color: #22225c;
+			color: #eae8e8;
+		}
+	</style>
+</head>
+
+<body class="maincontainer">
+	<div class="container">
+		<div class="navbar">
+			<ul class="menuItems">
+				<li><a class="navlinks" href="#">Discover</a></li>
+				<li><a class="navlinks" href="#">Book</a></li>
+				<li><a class="navlinks" href="#">Manage</a></li>
+				<li><a class="navlinks" href="#">Help</a></li>
+			</ul>
+			<select name="languageselection" id="languageselection">
+				<option value="India-English">India-English</option>
+			</select>
+		</div>
+		<div class="optionsnav">
+			<button class="optbtn" name="managemybooking" value="managemybooking">Manage My Booking</button>
+			<button class="optbtn" name="checkin" value="checkin">Check in</button>
+			<button class="optbtn" name="checkflightstatus" value="checkflightstatus">Check flight status</button>
+		</div>
+		<div class="cardscontainer">
+			<div class="card">
+				<img class="cardimg" src=".\1stcard.png" />
+				<div class="cardcontent" id="cardhead">Dreaming of London?</div>
+				<p class="cardcontent">Enjoy more choice with three flights a week taking off between Mumbai and London
+					from 11 December
+					2022.
+					Plan an exciting city break and explore iconic cultural landmarks with our great fares.</p>
+				<button class="btncard" name="booknow" value="booknow">Book now</button>
+			</div>
+			<div class="card">
+				<img class="cardimg" src=".\2ndcard.png" />
+				<div class="cardcontent" id="cardhead">Enjoying 1 extra bag in economy</div>
+				<p class="cardcontent">Passengers travelling from India to the UK in our World Traveller (economy) cabin
+					are now entitled to
+					2
+					checked bags as well as 2 carry-on bags</p>
+				<button class="btncard" name="checkyourallowance" value="checkyourallowance">Check your
+					allowance</button>
+			</div>
+			<div class="card">
+				<img class="cardimg" src=".\3rdcard.png" />
+				<div class="cardcontent" id="cardhead">Explore our lounges</div>
+				<p class="cardcontent">Experience the extra-special way to travel, with delicious food, plenty of space
+					and safe, attentive
+					service.</p>
+				<button class="btncard" name="findoutmore" value="findoutmore">Find out more</button>
+				<a class="cardcontent" href="#">Terms and conditions apply.</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
